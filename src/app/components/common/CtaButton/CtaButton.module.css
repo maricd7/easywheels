@@ -1,0 +1,15 @@
+.ctaButton {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #0b41b6;
+  box-shadow: #000;
+  border: 0;
+  min-width: 6rem;
+  max-width: fit-content;
+  font-size: 1.25rem;
+  cursor: pointer;
+  height: fit-content;
+}
+.ctaButton:hover {
+  background-color: #052058;
+}

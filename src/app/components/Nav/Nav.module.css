@@ -1,0 +1,23 @@
+.navBar {
+  margin: 0;
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
+  -moz-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
+  box-shadow: 5px 10px 24px -24px rgba(79, 79, 79, 1);
+}
+.linkList {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+.listElement {
+  font-size: 1rem;
+}
+.listElement:hover {
+  color: #0b41b6;
+  font-weight: 600;
+}
