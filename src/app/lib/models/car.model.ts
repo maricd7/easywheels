@@ -1,14 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
+import { ICar } from '@/app/types/CarType';
 
-interface ICar {
-  make: string;
-  model: string;
-  year: number;
-  pricePerDay: number;
-  availability: boolean;
-  features: string[];
-  imageUrl: string;
-}
 
 const CarSchema: Schema = new Schema<ICar>({
   make: { type: String, required: true },

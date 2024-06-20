@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: fixed;
   -webkit-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
   -moz-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
   box-shadow: 5px 10px 24px -24px rgba(79, 79, 79, 1);
+  background-color: white;
 }
 .linkList {
   display: flex;
@@ -16,6 +16,7 @@
 }
 .listElement {
   font-size: 1rem;
+  cursor: pointer;
 }
 .listElement:hover {
   color: #0b41b6;

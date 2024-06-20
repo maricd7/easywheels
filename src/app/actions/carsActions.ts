@@ -1,9 +1,5 @@
-//fetch cars from db 
-
 import { CarModel } from "../lib/models/car.model";
 import { connectToDB } from "../lib/mongoose"
-
-
 
 export const getCars = async () => {
  connectToDB();
@@ -13,5 +9,5 @@ export const getCars = async () => {
     const cars = await carsQuery.exec()
     return {cars}
  }
-
+ return { cars: [] };
 }

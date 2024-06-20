@@ -1,0 +1,28 @@
+.stepContainer,
+.stepTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.stepIconContainer {
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
+  -moz-box-shadow: 5px 5px 24px -24px rgba(79, 79, 79, 1);
+  box-shadow: 5px 10px 24px -24px rgba(79, 79, 79, 1);
+  max-width: fit-content;
+}
+.stepTextMain {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #222222;
+}
+.stepTextSub {
+  color: #8f8f8f;
+}
+.stepTextContainer {
+  gap: 0.5rem;
+}

@@ -94,7 +94,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  background-image: url("/bmw-hero.png");
 }
 
 a {

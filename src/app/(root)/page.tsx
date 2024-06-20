@@ -1,5 +1,5 @@
 import { getCars } from "../actions/carsActions";
-import { Hero } from "../components";
+import { Hero, HowItWorks } from "../components";
 
 const Home = async () => {
   const results = await getCars();
@@ -7,6 +7,7 @@ const Home = async () => {
   return (
     <div>
       <Hero />
+      <HowItWorks />
     </div>
   );
 };

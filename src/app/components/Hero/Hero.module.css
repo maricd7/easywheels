@@ -5,6 +5,9 @@
   align-items: center;
   padding: 0 10rem;
   position: relative;
+  background-image: url("/bmw-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .heroText {
   display: flex;
