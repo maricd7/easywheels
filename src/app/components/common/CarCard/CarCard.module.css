@@ -1,0 +1,78 @@
+.carCardContainer {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  -moz-box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  position: relative;
+  max-width: 328px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.carCardName {
+  width: 100%;
+}
+.carPrice {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.carPrice span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.rentButton,
+.rentButtonDisabled {
+  background-color: #0b41b6;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+.rentButton:hover {
+  background-color: #052058;
+}
+.rentButtonDisabled {
+  background-color: #999999;
+  cursor: auto;
+}
+.availableNow {
+  background-color: lightgreen;
+  color: #222222;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+.booked {
+  background-color: rgb(255, 159, 159);
+  color: #222222;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+.carFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  color: #222222;
+  font-size: 1rem;
+}
+.carFeatures span {
+  font-size: 0.8rem;
+}
+.availabilityStatus {
+  width: 100%;
+}

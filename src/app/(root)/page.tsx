@@ -1,13 +1,13 @@
 import { getCars } from "../actions/carsActions";
-import { Hero, HowItWorks } from "../components";
+import { Hero, HowItWorks, PopularCars } from "../components";
 
 const Home = async () => {
   const results = await getCars();
-
   return (
     <div>
       <Hero />
       <HowItWorks />
+      {results && <PopularCars results={results} />}
     </div>
   );
 };

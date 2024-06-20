@@ -1,7 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 import { ICar } from '@/app/types/CarType';
 
-
 const CarSchema: Schema = new Schema<ICar>({
   make: { type: String, required: true },
   model: { type: String, required: true },
@@ -12,6 +11,6 @@ const CarSchema: Schema = new Schema<ICar>({
   imageUrl: { type: String, required: true }
 });
 
-const CarModel = mongoose.models.Car || mongoose.model<ICar>('Car', CarSchema);
+const CarModel = (mongoose.models && mongoose.models.Car) || mongoose.model<ICar>('Car', CarSchema);
 
 export { CarModel };
