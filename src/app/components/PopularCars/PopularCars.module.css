@@ -6,8 +6,8 @@
   position: relative;
   flex-direction: column;
   gap: 4rem;
-  background-color: #d8e9ff;
-  padding: 4rem 0;
+  background-color: #fff;
+  padding: 8rem 0;
 }
 .popularCarsSectionMainText {
   display: flex;

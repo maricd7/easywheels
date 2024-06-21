@@ -12,6 +12,11 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  border: 1px solid #dddd;
+  cursor: pointer;
+}
+.carCardContainer:hover {
+  transform: scale(110%);
 }
 .carCardName {
   width: 100%;
