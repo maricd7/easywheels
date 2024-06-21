@@ -8,7 +8,7 @@ import { ICar } from "@/app/types/CarType";
 const PopularCars = ({ results }: any) => {
   const [cars, setCars] = useState<ICar[]>();
   useEffect(() => {
-    setCars(results.cars.slice(0, 4));
+    setCars(results.slice(0, 4));
   }, [results]);
 
   return (

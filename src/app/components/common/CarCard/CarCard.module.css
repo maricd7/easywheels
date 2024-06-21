@@ -21,7 +21,7 @@
   width: 100%;
   justify-content: space-between;
 }
-.carPrice span {
+.cardPriceMain {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -75,4 +75,13 @@
 }
 .availabilityStatus {
   width: 100%;
+}
+.cardSmText {
+  font-size: 0.8rem;
+  color: #999999;
+  text-align: right;
+}
+.priceContainer {
+  display: flex;
+  flex-direction: column;
 }

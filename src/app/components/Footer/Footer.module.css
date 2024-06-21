@@ -1,0 +1,10 @@
+.footerComponent {
+  width: 100%;
+  padding: 4rem 10rem;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 2rem;
+}

@@ -8,19 +8,19 @@ const Nav = () => {
       <Logo />
       <ul className={styles.linkList}>
         <li className={styles.listElement}>
-          <Link href="home">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className={styles.listElement}>
-          <Link href="home">Our Cars</Link>
+          <Link href="home">How it Works</Link>
         </li>
         <li className={styles.listElement}>
           <Link href="home">About Us</Link>
         </li>
         <li className={styles.listElement}>
-          <Link href="home">Contact</Link>
+          <Link href="home">Providers</Link>
         </li>
         <li className={styles.listElement}>
-          <Link href="home">Providers</Link>
+          <Link href="/login">Login</Link>
         </li>
       </ul>
     </nav>

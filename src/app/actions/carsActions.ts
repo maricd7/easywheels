@@ -7,7 +7,7 @@ export const getCars = async () => {
  const carsQuery = CarModel.find({})
  if(carsQuery){
     const cars = await carsQuery.exec()
-    return {cars}
+    return cars
  }
  return { cars: [] };
 }

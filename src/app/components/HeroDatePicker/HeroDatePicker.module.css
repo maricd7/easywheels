@@ -1,13 +1,16 @@
 .heroDatePickerContainer {
-  margin-top: 4rem;
   padding: 2rem 4rem;
   background-color: #fff;
   border-radius: 2rem;
-  bottom: 4rem;
-  width: 100%;
   display: flex;
-  gap: 8rem;
+  gap: 4rem;
   align-items: center;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  -moz-box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  box-shadow: 10px 10px 24px -18px rgba(79, 79, 79, 1);
+  border: 1px solid #dddddd;
+  bottom: 8rem;
 }
 .heroDatePickerInput {
   display: flex;

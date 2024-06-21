@@ -22,7 +22,11 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
         </div>
       </div>
       <p className={styles.carPrice}>
-        Price: <span>{car.pricePerDay}BAM</span>
+        Price:{" "}
+        <div className={styles.priceContainer}>
+          <span className={styles.cardPriceMain}>{car.pricePerDay} BAM</span>
+          <span className={styles.cardSmText}>Per Day</span>
+        </div>
       </p>
       {car.availability ? (
         <div className={styles.availabilityStatus}>

@@ -5,8 +5,9 @@
   padding: 0 10rem;
   position: relative;
   flex-direction: column;
-  margin: 4rem 0;
   gap: 4rem;
+  background-color: #fcfcfc;
+  padding: 4rem 0;
 }
 .howItWorksMainTxt {
   display: flex;

@@ -15,12 +15,11 @@ const Hero = () => {
         <div className={styles.heroText}>
           <Heading text="Get Your Dream Car Rental" />
           <Paragraph text="Discover Seamless Travel Solutions: From Economy to Luxury, Our Car Rentals Offer Comfort, Style, and Affordability" />
-
-          {/* <HeroDatePicker /> */}
         </div>
         <CtaButton text="Login" />
       </div>
       {/* <HeroFloatingIcon text="90L" icon="fluent-emoji:fuel-pump" /> */}
+      <HeroDatePicker />
     </section>
   );
 };
