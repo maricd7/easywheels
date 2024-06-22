@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.1.6",
     "@iconify/react": "^5.0.1",
     "axios": "^1.7.2",
+    "crypto": "^1.0.1",
     "iconify": "^1.4.0",
     "mongodb": "^6.7.0",
     "mongoose": "^8.4.3",
     "next": "14.2.4",
+    "next-auth": "^4.24.7",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
