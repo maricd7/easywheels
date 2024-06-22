@@ -20,7 +20,7 @@ const Nav = () => {
           <Link href="home">Providers</Link>
         </li>
         <li className={styles.listElement}>
-          <Link href="/login">Login</Link>
+          <Link href="/sign-in">Login</Link>
         </li>
       </ul>
     </nav>
