@@ -48,7 +48,7 @@ const CarCard = ({ car }: CarCardProps) => {
       )}
       <div className={styles.carFeatures}>
         {car.features.map((feature, index) => (
-          <span>{feature} </span>
+          <span key={index}>{feature} </span>
         ))}
       </div>
     </Link>
