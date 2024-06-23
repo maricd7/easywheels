@@ -17,6 +17,7 @@
   display: flex;
   gap: 4rem;
   list-style-type: none;
+  align-items: center;
 }
 .listElement {
   font-size: 1rem;

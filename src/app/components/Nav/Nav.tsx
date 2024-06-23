@@ -1,8 +1,13 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { Logo } from "../common/Logo";
 import styles from "./Nav.module.css";
 import Link from "next/link";
+import { UserButton, useUser } from "@clerk/nextjs";
+
 const Nav = () => {
+  const { isSignedIn } = useUser();
+
   return (
     <nav className={styles.navBar}>
       <Logo />
@@ -20,7 +25,7 @@ const Nav = () => {
           <Link href="home">Providers</Link>
         </li>
         <li className={styles.listElement}>
-          <Link href="/sign-in">Login</Link>
+          {isSignedIn ? <UserButton /> : <Link href="/sign-in">Login</Link>}
         </li>
       </ul>
     </nav>
