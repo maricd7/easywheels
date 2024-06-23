@@ -13,13 +13,13 @@ const CarDetailsTopBox = () => {
 
   useEffect(() => {
     const getCar = async () => {
-      const awaited = await getCarById(id as string);
+      const awaited = await getCarById(id as any);
       setCar(awaited);
     };
 
     getCar();
-  }, []);
-
+  }, [id]);
+  console.log(car, "Auto");
   if (!car) {
     return <h2>Car not found.</h2>;
   }
