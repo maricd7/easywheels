@@ -2,6 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import { ICar } from '@/app/types/CarType';
 
 const CarSchema: Schema = new Schema<ICar>({
+  _id:{ type: String, required: true },
   make: { type: String, required: true },
   model: { type: String, required: true },
   year: { type: Number, required: true },

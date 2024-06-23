@@ -4,12 +4,17 @@ import styles from "./CarDetailsTopBox.module.css";
 import Image from "next/image";
 import { getCarByName } from "@/app/actions/carsActions";
 import { ICar } from "@/app/types/CarType";
+import { usePathname } from "next/navigation";
+
 const CarDetailsTopBox = () => {
   const [car, setCar] = useState<ICar>();
 
+  const pathname = usePathname();
+
   useEffect(() => {
     const getCar = async () => {
-      const carQuery = { _id: "66732d6c734aec3c9f574e6d" };
+      const _id = String(pathname.replace("/cars-details/", ""));
+      const carQuery = { _id: _id };
       const awaited = await getCarByName(carQuery);
       setCar(awaited);
     };
