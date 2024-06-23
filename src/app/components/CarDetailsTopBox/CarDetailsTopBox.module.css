@@ -1,0 +1,14 @@
+.detailsSection {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mainBox {
+  display: flex;
+  gap: 4rem;
+}

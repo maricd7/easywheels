@@ -1,3 +1,4 @@
+   'use server'
 import { CarModel } from "../lib/models/car.model";
 import { connectToDB } from "../lib/mongoose"
 
@@ -11,3 +12,12 @@ export const getCars = async () => {
  }
  return { cars: [] };
 }
+export const getCarByName = async (carQuery:any) => {
+   await connectToDB();
+   const car = await CarModel.findOne(carQuery).exec();
+
+   if (car) {
+     return car.toObject();
+   }
+   return { car: [] };
+ };
