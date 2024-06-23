@@ -4,13 +4,19 @@ import Image from "next/image";
 import styles from "./CarCard.module.css";
 import { CtaButton } from "../CtaButton";
 import Link from "next/link";
-interface CarCardProps {
+type CarCardProps = {
   car: ICar;
-}
+};
 
-const CarCard: React.FC<CarCardProps> = ({ car }) => {
+const CarCard = ({ car }: CarCardProps) => {
   return (
-    <div className={styles.carCardContainer}>
+    <Link
+      href={{
+        pathname: `cars-details/${car.make}`,
+        query: { id: car._id } as any,
+      }}
+      className={styles.carCardContainer}
+    >
       <Image src={car.imageUrl} width={200} height={200} alt="car" />
       <div className={styles.carCardName}>
         <h3>
@@ -31,9 +37,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
       </p>
       {car.availability ? (
         <div className={styles.availabilityStatus}>
-          <Link href={`/cars-details/${car._id}`} className={styles.rentButton}>
-            Rent Now
-          </Link>
+          <button className={styles.rentButton}>Rent Now</button>
           <span className={styles.availableNow}>AVAILABLE NOW</span>
         </div>
       ) : (
@@ -47,7 +51,7 @@ const CarCard: React.FC<CarCardProps> = ({ car }) => {
           <span>{feature} </span>
         ))}
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -2,26 +2,23 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CarDetailsTopBox.module.css";
 import Image from "next/image";
-import { getCarByName } from "@/app/actions/carsActions";
+import { getCarById } from "@/app/actions/carsActions";
 import { ICar } from "@/app/types/CarType";
-import { usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 const CarDetailsTopBox = () => {
   const [car, setCar] = useState<ICar>();
-
-  const pathname = usePathname();
+  const params = useSearchParams();
+  const id = params.get("id");
 
   useEffect(() => {
     const getCar = async () => {
-      const _id = String(pathname.replace("/cars-details/", ""));
-      const carQuery = { _id: _id };
-      const awaited = await getCarByName(carQuery);
+      const awaited = await getCarById(id as string);
       setCar(awaited);
     };
 
     getCar();
   }, []);
-  console.log(car, "kar");
 
   if (!car) {
     return <h2>Car not found.</h2>;

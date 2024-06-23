@@ -12,12 +12,19 @@ export const getCars = async () => {
  }
  return { cars: [] };
 }
-export const getCarByName = async (carQuery:any) => {
-   await connectToDB();
-   const car = await CarModel.findOne(carQuery).exec();
 
-   if (car) {
-     return car.toObject();
+
+
+export const getCarById = async (_id: string) => {
+   await connectToDB();
+   try {
+     const car = await CarModel.findById(_id).exec();
+     if (car) {
+       return car.toObject();
+     }
+     return { car: null }; 
+   } catch (error) {
+     console.error("Error fetching car:", error);
+     throw error; 
    }
-   return { car: [] };
- };
+};
