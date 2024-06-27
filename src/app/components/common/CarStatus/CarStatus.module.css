@@ -1,0 +1,39 @@
+.availabilityStatus {
+  width: 100%;
+}
+.rentButton,
+.rentButtonDisabled {
+  background-color: #0b41b6;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+.availableNow {
+  background-color: lightgreen;
+  color: #222222;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+.booked {
+  background-color: rgb(255, 159, 159);
+  color: #222222;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+.rentButton:hover {
+  background-color: #052058;
+}
+.rentButtonDisabled {
+  background-color: #999999;
+  cursor: auto;
+}

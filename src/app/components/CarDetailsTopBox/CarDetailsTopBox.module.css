@@ -12,3 +12,19 @@
   display: flex;
   gap: 4rem;
 }
+.carSatus {
+  position: relative;
+}
+.mainInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.mainInfoContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.features {
+  display: flex;
+}

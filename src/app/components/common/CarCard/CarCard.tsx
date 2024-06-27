@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./CarCard.module.css";
 import { CtaButton } from "../CtaButton";
 import Link from "next/link";
+import { CarStatus } from "../CarStatus";
 type CarCardProps = {
   car: ICar;
 };
@@ -35,17 +36,7 @@ const CarCard = ({ car }: CarCardProps) => {
           <span className={styles.cardSmText}>Per Day</span>
         </span>
       </p>
-      {car.availability ? (
-        <div className={styles.availabilityStatus}>
-          <button className={styles.rentButton}>Rent Now</button>
-          <span className={styles.availableNow}>AVAILABLE NOW</span>
-        </div>
-      ) : (
-        <div className={styles.availabilityStatus}>
-          <button className={styles.rentButtonDisabled}>Rent Now</button>
-          <span className={styles.booked}>Booked</span>
-        </div>
-      )}
+      <CarStatus available={car.availability} />
       <div className={styles.carFeatures}>
         {car.features.map((feature, index) => (
           <span key={index}>{feature} </span>
