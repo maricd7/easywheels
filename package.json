@@ -22,6 +22,7 @@
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "svix": "^1.24.0",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
